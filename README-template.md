@@ -41,7 +41,6 @@ This is my first practice using CSS Grid and it turned out perfect. I aim to use
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.google.com) - Google helped me with the media queries and responsive breakpoints.
 
 ## Author

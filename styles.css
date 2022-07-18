@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --dark-blackish-blue: hsl(219, 29%, 14%);   
+    --white: hsl(0, 0%, 100%);
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--light-grayish-blue);
+}
+
+main {
+    max-width: 1440px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+main section {
+    padding: 30px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+main section header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+main section header img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+main section header span {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+main section header span p {
+    opacity: 50%;
+}
+
+main section p.verify {
+    font-weight: 600;
+    opacity: 70%;
+    margin-top: 20px;
+    line-height: 1.4rem;
+}
+
+main section p.comment {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+main section.first {
+    background-color: var(--moderate-violet);
+    grid-column: 1 / 3;
+    color: #fff;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 10px right 100px;
+}
+
+main section.second {
+    background-color: var(--dark-grayish-blue);
+    color: #fff;
+}
+
+main section.third {
+    background-color: var(--white);
+    
+}
+
+main section.fourth {
+    background-color: var(--dark-blackish-blue);
+    color: white;
+    grid-column: 2 / 4;
+    grid: 2 / 3;
+}
+
+main section.fifth {
+    background-color: var(--white);
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+}
+
+footer.attribution {
+    font-size: 15px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 768px){
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px;
+        margin: 0px auto;
+        padding: 20px;
+    }
+
+    main section.first {
+        grid-row: 1 / 2;
+        grid-column: 1;
+    }
+
+    main section.fourth {
+        grid-column: 1;
+        grid: 4;
+    }
+    
+    main section.fifth {
+        grid-row: 5;
+        grid-column: 1;
+    }
+}
